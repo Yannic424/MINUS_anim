@@ -3,17 +3,27 @@
 body {
     background-color: rgb(8, 8, 117);
     overflow: hidden;
+    height: 100vh;
+    margin: 0;
 }
+
+
 
 .container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #startAnimation {
-    padding: 5px;
+    padding: 10px 20px;
+    margin-top: -20%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* ///////////////////////////////LETTRES///////////////////////////////// */
