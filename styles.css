@@ -1,0 +1,222 @@
+/* ////////////////////////////////MINUS////////////////////////////////// */
+
+body {
+    background-color: rgb(8, 8, 117);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#startAnimation {
+    padding: 5px;
+}
+
+/* ///////////////////////////////LETTRES///////////////////////////////// */
+
+#lettreM {
+    fill: orange;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+#lettreI {
+    fill: orange;
+    animation-fill-mode: forwards;
+    transform-origin: 41% 46%;
+    opacity: 0;
+}
+
+#lettreN {
+    fill: orange;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+#lettreU {
+    fill: orange;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    opacity: 0;
+}
+
+#lettreS {
+    fill: orange;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+
+
+/* //////////////////////////////KEYFRAMES//////////////////////////////// */
+
+@keyframes lettreM {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {}
+
+    20% {}
+
+    30% {}
+
+    40% {}
+
+    50% {}
+
+    60% {}
+
+    70% {
+        transform: translateX(-88px);
+    }
+
+    80% {}
+
+    90% {
+        transform: translateX(-92px);
+    }
+
+    100% {
+        transform: translateX(-88px);
+    }
+}
+
+@keyframes lettreI {
+    0% {
+        transform: scale(0%);
+    }
+
+    10% {}
+
+    20% {}
+
+    30% {}
+
+    40% {}
+
+    50% {}
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {}
+
+    80% {
+        transform: scaleY(100%);
+    }
+
+    90% {
+        transform: scaleY(120%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%) scaleY(100%);
+    }
+}
+
+@keyframes lettreN {
+    from {}
+
+    to {}
+}
+
+@keyframes lettreU {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    10% {}
+
+    20% {}
+
+    30% {}
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {}
+
+    60% {}
+
+    70% {}
+
+    80% {
+        transform: translateY(0%);
+    }
+
+    90% {
+        transform: translateY(3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes lettreS {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {}
+
+    20% {}
+
+    30% {
+        transform: translateX(23px);
+    }
+
+    40% {}
+
+    50% {}
+
+    60% {}
+
+    70% {}
+
+    80% {
+        transform: translateX(192px);
+    }
+
+    90% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(192px);
+    }
+}
+
+/* //////////////////////////////LANCEMENT//////////////////////////////// */
+
+.animateM {
+    animation: lettreM .4s linear;
+}
+
+.animateI {
+    animation: lettreI .2s linear;
+}
+
+.animateN {
+    animation: lettreN .5s linear;
+}
+
+.animateU {
+    animation: lettreU .4s linear;
+}
+
+.animateS {
+    animation: lettreS .4s linear;
+}
+
+/* ////////////////////////////MONINPUT//////////////////////////////// */
